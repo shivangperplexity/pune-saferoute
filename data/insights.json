@@ -1,0 +1,1245 @@
+{
+ "preprocessing": {
+  "records": 3936,
+  "missing_values": 0,
+  "attributes": 23,
+  "years": [
+   "2019",
+   "2020",
+   "2021",
+   "2022",
+   "2023"
+  ],
+  "fatal": 1237,
+  "killed": 1421,
+  "injured": 5468
+ },
+ "dbscan": {
+  "eps_m": 200,
+  "min_pts": 15,
+  "clusters": 24,
+  "noise_points": 2796,
+  "clustered_share": 0.29,
+  "official_spots": 25,
+  "official_detected": 24,
+  "recall": 0.96
+ },
+ "hotspots": [
+  {
+   "id": 0,
+   "name": "Navale Bridge",
+   "official_blackspot": true,
+   "lat": 18.4601,
+   "lon": 73.823254,
+   "radius_m": 252,
+   "accidents": 150,
+   "fatal": 80,
+   "grievous": 37,
+   "minor": 33,
+   "killed": 92,
+   "esi": 544,
+   "road": "Katraj - Dehu Road Bypass",
+   "road_type": "Highway",
+   "peak_time": "Night (21-6)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.293,
+   "years_active": 5,
+   "rank": 1,
+   "tier": "High",
+   "limit_cut": 20
+  },
+  {
+   "id": 21,
+   "name": "New Katraj Tunnel Road",
+   "official_blackspot": true,
+   "lat": 18.430689,
+   "lon": 73.840359,
+   "radius_m": 290,
+   "accidents": 73,
+   "fatal": 36,
+   "grievous": 28,
+   "minor": 9,
+   "killed": 39,
+   "esi": 273,
+   "road": "Ambegaon Viaduct",
+   "road_type": "Highway",
+   "peak_time": "Night (21-6)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.397,
+   "years_active": 5,
+   "rank": 2,
+   "tier": "High",
+   "limit_cut": 20
+  },
+  {
+   "id": 13,
+   "name": "Navale Bridge Selfie Point",
+   "official_blackspot": true,
+   "lat": 18.453829,
+   "lon": 73.828136,
+   "radius_m": 219,
+   "accidents": 68,
+   "fatal": 40,
+   "grievous": 14,
+   "minor": 14,
+   "killed": 45,
+   "esi": 256,
+   "road": "Katraj - Dehu Road Bypass",
+   "road_type": "Highway",
+   "peak_time": "Midday (10-16)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.294,
+   "years_active": 5,
+   "rank": 3,
+   "tier": "High",
+   "limit_cut": 20
+  },
+  {
+   "id": 1,
+   "name": "Dukkar Khind",
+   "official_blackspot": true,
+   "lat": 18.501434,
+   "lon": 73.791703,
+   "radius_m": 242,
+   "accidents": 58,
+   "fatal": 38,
+   "grievous": 10,
+   "minor": 10,
+   "killed": 46,
+   "esi": 230,
+   "road": "Katraj - Dehu Road Bypass",
+   "road_type": "Highway",
+   "peak_time": "Evening (16-21)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.293,
+   "years_active": 5,
+   "rank": 4,
+   "tier": "High",
+   "limit_cut": 20
+  },
+  {
+   "id": 12,
+   "name": "Bhumkar Chowk, Wakad",
+   "official_blackspot": true,
+   "lat": 18.605373,
+   "lon": 73.752181,
+   "radius_m": 309,
+   "accidents": 72,
+   "fatal": 20,
+   "grievous": 34,
+   "minor": 18,
+   "killed": 21,
+   "esi": 220,
+   "road": "(unnamed road)",
+   "road_type": "Arterial",
+   "peak_time": "Evening (16-21)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.208,
+   "years_active": 5,
+   "rank": 5,
+   "tier": "High",
+   "limit_cut": 20
+  },
+  {
+   "id": 11,
+   "name": "Katraj Chowk",
+   "official_blackspot": true,
+   "lat": 18.455053,
+   "lon": 73.85829,
+   "radius_m": 228,
+   "accidents": 54,
+   "fatal": 24,
+   "grievous": 18,
+   "minor": 12,
+   "killed": 30,
+   "esi": 186,
+   "road": "Satara Road",
+   "road_type": "Highway",
+   "peak_time": "Night (21-6)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.352,
+   "years_active": 5,
+   "rank": 6,
+   "tier": "High",
+   "limit_cut": 20
+  },
+  {
+   "id": 5,
+   "name": "Dari Pul (Narhe)",
+   "official_blackspot": true,
+   "lat": 18.444859,
+   "lon": 73.836243,
+   "radius_m": 247,
+   "accidents": 40,
+   "fatal": 25,
+   "grievous": 11,
+   "minor": 4,
+   "killed": 28,
+   "esi": 162,
+   "road": "Katraj - Dehu Road Bypass",
+   "road_type": "Highway",
+   "peak_time": "Midday (10-16)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.3,
+   "years_active": 5,
+   "rank": 7,
+   "tier": "High",
+   "limit_cut": 20
+  },
+  {
+   "id": 6,
+   "name": "Chandani Chowk",
+   "official_blackspot": true,
+   "lat": 18.507415,
+   "lon": 73.786348,
+   "radius_m": 356,
+   "accidents": 59,
+   "fatal": 18,
+   "grievous": 13,
+   "minor": 28,
+   "killed": 19,
+   "esi": 157,
+   "road": "Paud Road",
+   "road_type": "Arterial",
+   "peak_time": "Evening (16-21)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.305,
+   "years_active": 5,
+   "rank": 8,
+   "tier": "High",
+   "limit_cut": 20
+  },
+  {
+   "id": 7,
+   "name": "Kharadi Bypass Chowk",
+   "official_blackspot": true,
+   "lat": 18.549759,
+   "lon": 73.937048,
+   "radius_m": 243,
+   "accidents": 45,
+   "fatal": 21,
+   "grievous": 10,
+   "minor": 14,
+   "killed": 25,
+   "esi": 149,
+   "road": "Kharadi Bypass",
+   "road_type": "Highway",
+   "peak_time": "Evening (16-21)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Car",
+   "night_share": 0.289,
+   "years_active": 5,
+   "rank": 9,
+   "tier": "High",
+   "limit_cut": 20
+  },
+  {
+   "id": 10,
+   "name": "Mutha River Bridge, Warje",
+   "official_blackspot": true,
+   "lat": 18.494863,
+   "lon": 73.788112,
+   "radius_m": 267,
+   "accidents": 43,
+   "fatal": 19,
+   "grievous": 12,
+   "minor": 12,
+   "killed": 22,
+   "esi": 143,
+   "road": "Katraj - Dehu Road Bypass",
+   "road_type": "Highway",
+   "peak_time": "Night (21-6)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.419,
+   "years_active": 5,
+   "rank": 10,
+   "tier": "Medium",
+   "limit_cut": 15
+  },
+  {
+   "id": 20,
+   "name": "Nashik Phata",
+   "official_blackspot": true,
+   "lat": 18.60928,
+   "lon": 73.820107,
+   "radius_m": 285,
+   "accidents": 47,
+   "fatal": 16,
+   "grievous": 14,
+   "minor": 17,
+   "killed": 20,
+   "esi": 139,
+   "road": "(unnamed road)",
+   "road_type": "Arterial",
+   "peak_time": "Evening (16-21)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.277,
+   "years_active": 5,
+   "rank": 11,
+   "tier": "Medium",
+   "limit_cut": 15
+  },
+  {
+   "id": 3,
+   "name": "Tata Guard Room, Chandan Nagar",
+   "official_blackspot": true,
+   "lat": 18.562519,
+   "lon": 73.932712,
+   "radius_m": 373,
+   "accidents": 40,
+   "fatal": 12,
+   "grievous": 18,
+   "minor": 10,
+   "killed": 12,
+   "esi": 124,
+   "road": "Nagar Road",
+   "road_type": "Highway",
+   "peak_time": "Night (21-6)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.3,
+   "years_active": 5,
+   "rank": 12,
+   "tier": "Medium",
+   "limit_cut": 15
+  },
+  {
+   "id": 2,
+   "name": "Phursungi Phata",
+   "official_blackspot": true,
+   "lat": 18.485702,
+   "lon": 73.953616,
+   "radius_m": 197,
+   "accidents": 39,
+   "fatal": 12,
+   "grievous": 15,
+   "minor": 12,
+   "killed": 12,
+   "esi": 117,
+   "road": "Fursungi Bhekrai Road",
+   "road_type": "Collector",
+   "peak_time": "Evening (16-21)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.282,
+   "years_active": 5,
+   "rank": 13,
+   "tier": "Medium",
+   "limit_cut": 15
+  },
+  {
+   "id": 18,
+   "name": "Kadamwak Vasti, Loni Kalbhor",
+   "official_blackspot": true,
+   "lat": 18.49233,
+   "lon": 73.998809,
+   "radius_m": 276,
+   "accidents": 36,
+   "fatal": 11,
+   "grievous": 16,
+   "minor": 9,
+   "killed": 13,
+   "esi": 112,
+   "road": "(unnamed road)",
+   "road_type": "Collector",
+   "peak_time": "Midday (10-16)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Car",
+   "night_share": 0.194,
+   "years_active": 5,
+   "rank": 14,
+   "tier": "Medium",
+   "limit_cut": 15
+  },
+  {
+   "id": 19,
+   "name": "Saswad Road near IBM, Hadapsar",
+   "official_blackspot": true,
+   "lat": 18.496595,
+   "lon": 73.943372,
+   "radius_m": 209,
+   "accidents": 34,
+   "fatal": 11,
+   "grievous": 15,
+   "minor": 8,
+   "killed": 11,
+   "esi": 108,
+   "road": "Saswad Road",
+   "road_type": "Highway",
+   "peak_time": "Evening (16-21)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.265,
+   "years_active": 5,
+   "rank": 15,
+   "tier": "Medium",
+   "limit_cut": 15
+  },
+  {
+   "id": 14,
+   "name": "Mai Mangeshkar Hospital, Warje",
+   "official_blackspot": true,
+   "lat": 18.484627,
+   "lon": 73.799435,
+   "radius_m": 242,
+   "accidents": 36,
+   "fatal": 12,
+   "grievous": 9,
+   "minor": 15,
+   "killed": 13,
+   "esi": 102,
+   "road": "Warje Road",
+   "road_type": "Collector",
+   "peak_time": "Evening (16-21)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.222,
+   "years_active": 5,
+   "rank": 16,
+   "tier": "Medium",
+   "limit_cut": 15
+  },
+  {
+   "id": 16,
+   "name": "Vaiduwadi Chowk, Hadapsar",
+   "official_blackspot": true,
+   "lat": 18.504813,
+   "lon": 73.918465,
+   "radius_m": 261,
+   "accidents": 34,
+   "fatal": 9,
+   "grievous": 16,
+   "minor": 9,
+   "killed": 9,
+   "esi": 102,
+   "road": "(unnamed road)",
+   "road_type": "Collector",
+   "peak_time": "Night (21-6)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.353,
+   "years_active": 5,
+   "rank": 17,
+   "tier": "Medium",
+   "limit_cut": 15
+  },
+  {
+   "id": 23,
+   "name": "Ravidarshan Chowk, Hadapsar",
+   "official_blackspot": true,
+   "lat": 18.501347,
+   "lon": 73.93743,
+   "radius_m": 228,
+   "accidents": 35,
+   "fatal": 10,
+   "grievous": 11,
+   "minor": 14,
+   "killed": 12,
+   "esi": 97,
+   "road": "Solapur Road",
+   "road_type": "Collector",
+   "peak_time": "Midday (10-16)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.286,
+   "years_active": 5,
+   "rank": 18,
+   "tier": "Low",
+   "limit_cut": 10
+  },
+  {
+   "id": 8,
+   "name": "Mundhwa Railway Bridge",
+   "official_blackspot": true,
+   "lat": 18.533791,
+   "lon": 73.929713,
+   "radius_m": 215,
+   "accidents": 31,
+   "fatal": 10,
+   "grievous": 10,
+   "minor": 11,
+   "killed": 12,
+   "esi": 91,
+   "road": "Mundhwa Road",
+   "road_type": "Arterial",
+   "peak_time": "Evening (16-21)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.323,
+   "years_active": 5,
+   "rank": 19,
+   "tier": "Low",
+   "limit_cut": 10
+  },
+  {
+   "id": 22,
+   "name": "Airport Chowk",
+   "official_blackspot": true,
+   "lat": 18.577728,
+   "lon": 73.907442,
+   "radius_m": 218,
+   "accidents": 31,
+   "fatal": 8,
+   "grievous": 12,
+   "minor": 11,
+   "killed": 10,
+   "esi": 87,
+   "road": "(unnamed road)",
+   "road_type": "Arterial",
+   "peak_time": "Midday (10-16)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.258,
+   "years_active": 5,
+   "rank": 20,
+   "tier": "Low",
+   "limit_cut": 10
+  },
+  {
+   "id": 4,
+   "name": "Kharadi Jakat Naka",
+   "official_blackspot": true,
+   "lat": 18.557216,
+   "lon": 73.944694,
+   "radius_m": 163,
+   "accidents": 28,
+   "fatal": 7,
+   "grievous": 15,
+   "minor": 6,
+   "killed": 7,
+   "esi": 86,
+   "road": "(unnamed road)",
+   "road_type": "Collector",
+   "peak_time": "Evening (16-21)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Car",
+   "night_share": 0.214,
+   "years_active": 5,
+   "rank": 21,
+   "tier": "Low",
+   "limit_cut": 10
+  },
+  {
+   "id": 9,
+   "name": "Loni Station Chowk",
+   "official_blackspot": true,
+   "lat": 18.490077,
+   "lon": 74.015004,
+   "radius_m": 185,
+   "accidents": 33,
+   "fatal": 6,
+   "grievous": 14,
+   "minor": 13,
+   "killed": 7,
+   "esi": 85,
+   "road": "(unnamed road)",
+   "road_type": "Collector",
+   "peak_time": "Midday (10-16)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.152,
+   "years_active": 5,
+   "rank": 22,
+   "tier": "Low",
+   "limit_cut": 10
+  },
+  {
+   "id": 15,
+   "name": "Viman Nagar Chowk",
+   "official_blackspot": true,
+   "lat": 18.56487,
+   "lon": 73.913376,
+   "radius_m": 244,
+   "accidents": 29,
+   "fatal": 4,
+   "grievous": 13,
+   "minor": 12,
+   "killed": 6,
+   "esi": 71,
+   "road": "Viman Nagar Road",
+   "road_type": "Collector",
+   "peak_time": "Night (21-6)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.31,
+   "years_active": 5,
+   "rank": 23,
+   "tier": "Low",
+   "limit_cut": 10
+  },
+  {
+   "id": 17,
+   "name": "Palkhi Visava, Wadki",
+   "official_blackspot": true,
+   "lat": 18.442855,
+   "lon": 73.973731,
+   "radius_m": 233,
+   "accidents": 25,
+   "fatal": 6,
+   "grievous": 8,
+   "minor": 11,
+   "killed": 9,
+   "esi": 65,
+   "road": "Saswad Road",
+   "road_type": "Highway",
+   "peak_time": "Evening (16-21)",
+   "top_cause": "Over-speeding",
+   "top_vehicle": "Two-wheeler",
+   "night_share": 0.24,
+   "years_active": 5,
+   "rank": 24,
+   "tier": "Low",
+   "limit_cut": 10
+  }
+ ],
+ "apriori": {
+  "min_support": 0.02,
+  "frequent_itemsets": 4488,
+  "rules_total": 15120,
+  "fatal_rules": [
+   {
+    "if": [
+     "Light=Dark - unlit",
+     "Road=Highway",
+     "Vehicle=Two-wheeler"
+    ],
+    "then": "Severity=Fatal",
+    "support": 0.0351,
+    "confidence": 0.673,
+    "lift": 2.14,
+    "count": 138
+   },
+   {
+    "if": [
+     "Road=Highway",
+     "Time=Night (21-6)",
+     "Vehicle=Two-wheeler"
+    ],
+    "then": "Severity=Fatal",
+    "support": 0.0239,
+    "confidence": 0.667,
+    "lift": 2.12,
+    "count": 94
+   },
+   {
+    "if": [
+     "Light=Dark - unlit",
+     "Location=Bridge/Slope",
+     "Road=Highway"
+    ],
+    "then": "Severity=Fatal",
+    "support": 0.0224,
+    "confidence": 0.657,
+    "lift": 2.09,
+    "count": 88
+   },
+   {
+    "if": [
+     "Light=Dark - unlit",
+     "Location=Bridge/Slope"
+    ],
+    "then": "Severity=Fatal",
+    "support": 0.0226,
+    "confidence": 0.654,
+    "lift": 2.08,
+    "count": 89
+   },
+   {
+    "if": [
+     "Cause=Over-speeding",
+     "Light=Dark - unlit",
+     "Road=Highway"
+    ],
+    "then": "Severity=Fatal",
+    "support": 0.0488,
+    "confidence": 0.64,
+    "lift": 2.04,
+    "count": 192
+   },
+   {
+    "if": [
+     "Cause=Over-speeding",
+     "Road=Highway",
+     "Time=Night (21-6)"
+    ],
+    "then": "Severity=Fatal",
+    "support": 0.031,
+    "confidence": 0.632,
+    "lift": 2.01,
+    "count": 122
+   },
+   {
+    "if": [
+     "Cause=Over-speeding",
+     "Light=Dark - unlit",
+     "Vehicle=Two-wheeler"
+    ],
+    "then": "Severity=Fatal",
+    "support": 0.0267,
+    "confidence": 0.633,
+    "lift": 2.01,
+    "count": 105
+   },
+   {
+    "if": [
+     "Light=Dark - unlit",
+     "Road=Highway",
+     "Time=Evening (16-21)"
+    ],
+    "then": "Severity=Fatal",
+    "support": 0.0292,
+    "confidence": 0.608,
+    "lift": 1.94,
+    "count": 115
+   },
+   {
+    "if": [
+     "Light=Dark - unlit",
+     "Season=Winter",
+     "Vehicle=Two-wheeler"
+    ],
+    "then": "Severity=Fatal",
+    "support": 0.0211,
+    "confidence": 0.606,
+    "lift": 1.93,
+    "count": 83
+   },
+   {
+    "if": [
+     "Cause=Over-speeding",
+     "Location=Bridge/Slope",
+     "Road=Highway"
+    ],
+    "then": "Severity=Fatal",
+    "support": 0.0234,
+    "confidence": 0.601,
+    "lift": 1.91,
+    "count": 92
+   },
+   {
+    "if": [
+     "Light=Dark - unlit",
+     "Road=Highway",
+     "Season=Winter"
+    ],
+    "then": "Severity=Fatal",
+    "support": 0.0381,
+    "confidence": 0.598,
+    "lift": 1.9,
+    "count": 150
+   },
+   {
+    "if": [
+     "Cause=Over-speeding",
+     "Road=Highway",
+     "Vehicle=Two-wheeler"
+    ],
+    "then": "Severity=Fatal",
+    "support": 0.0371,
+    "confidence": 0.598,
+    "lift": 1.9,
+    "count": 146
+   },
+   {
+    "if": [
+     "Day=Weekend",
+     "Light=Dark - unlit",
+     "Road=Highway"
+    ],
+    "then": "Severity=Fatal",
+    "support": 0.0277,
+    "confidence": 0.596,
+    "lift": 1.9,
+    "count": 109
+   },
+   {
+    "if": [
+     "Cause=Over-speeding",
+     "Location=Bridge/Slope"
+    ],
+    "then": "Severity=Fatal",
+    "support": 0.0236,
+    "confidence": 0.596,
+    "lift": 1.9,
+    "count": 93
+   },
+   {
+    "if": [
+     "Cause=Over-speeding",
+     "Light=Dark - unlit",
+     "Time=Evening (16-21)"
+    ],
+    "then": "Severity=Fatal",
+    "support": 0.0224,
+    "confidence": 0.599,
+    "lift": 1.9,
+    "count": 88
+   }
+  ],
+  "other_rules": [
+   {
+    "if": [
+     "Day=Weekday",
+     "Road=Highway",
+     "Time=Night (21-6)"
+    ],
+    "then": "Vehicle=Truck/Tempo",
+    "support": 0.0208,
+    "confidence": 0.311,
+    "lift": 2.34,
+    "count": 82
+   },
+   {
+    "if": [
+     "Road=Highway",
+     "Time=Night (21-6)",
+     "Weather=Clear"
+    ],
+    "then": "Vehicle=Truck/Tempo",
+    "support": 0.0218,
+    "confidence": 0.305,
+    "lift": 2.3,
+    "count": 86
+   },
+   {
+    "if": [
+     "Cause=Pothole/road condition"
+    ],
+    "then": "Weather=Rain",
+    "support": 0.0208,
+    "confidence": 0.332,
+    "lift": 2.28,
+    "count": 82
+   },
+   {
+    "if": [
+     "Day=Weekend",
+     "Road=Highway",
+     "Weather=Clear"
+    ],
+    "then": "Vehicle=Truck/Tempo",
+    "support": 0.0206,
+    "confidence": 0.3,
+    "lift": 2.26,
+    "count": 81
+   },
+   {
+    "if": [
+     "Cause=Over-speeding",
+     "Road=Arterial",
+     "Vehicle=Car"
+    ],
+    "then": "Location=Mid-block",
+    "support": 0.0201,
+    "confidence": 0.564,
+    "lift": 1.41,
+    "count": 79
+   }
+  ]
+ },
+ "naive_bayes": {
+  "features": [
+   "road_type",
+   "time_band",
+   "light",
+   "weather",
+   "vehicle"
+  ],
+  "eval": {
+   "test_size": 788,
+   "threshold": 0.4,
+   "accuracy": 0.67,
+   "precision": 0.494,
+   "recall": 0.455,
+   "auc": 0.684,
+   "confusion": {
+    "tp": 117,
+    "fp": 120,
+    "fn": 140,
+    "tn": 411
+   },
+   "baseline_fatal_rate": 0.326
+  },
+  "model": {
+   "prior": {
+    "fatal": 0.31427845528455284
+   },
+   "cpt": {
+    "road_type": {
+     "Arterial": [
+      0.27075,
+      0.3141
+     ],
+     "Collector": [
+      0.15068,
+      0.23048
+     ],
+     "Highway": [
+      0.49879,
+      0.24602
+     ],
+     "Local": [
+      0.07977,
+      0.2094
+     ]
+    },
+    "time_band": {
+     "Evening (16-21)": [
+      0.32393,
+      0.32667
+     ],
+     "Midday (10-16)": [
+      0.23932,
+      0.31151
+     ],
+     "Morning (6-10)": [
+      0.10556,
+      0.13799
+     ],
+     "Night (21-6)": [
+      0.33118,
+      0.22383
+     ]
+    },
+    "light": {
+     "Dark - lit": [
+      0.16277,
+      0.20607
+     ],
+     "Dark - unlit": [
+      0.34327,
+      0.15316
+     ],
+     "Daylight": [
+      0.39887,
+      0.53755
+     ],
+     "Dusk/Dawn": [
+      0.09508,
+      0.10322
+     ]
+    },
+    "weather": {
+     "Clear": [
+      0.73973,
+      0.71143
+     ],
+     "Cloudy": [
+      0.13779,
+      0.11876
+     ],
+     "Mist/Fog": [
+      0.00886,
+      0.00925
+     ],
+     "Rain": [
+      0.11362,
+      0.16056
+     ]
+    },
+    "vehicle": {
+     "Auto-rickshaw": [
+      0.03055,
+      0.07317
+     ],
+     "Bicycle": [
+      0.03859,
+      0.03252
+     ],
+     "Bus": [
+      0.04502,
+      0.05469
+     ],
+     "Car": [
+      0.13023,
+      0.21101
+     ],
+     "Pedestrian": [
+      0.13585,
+      0.09276
+     ],
+     "Truck/Tempo": [
+      0.16158,
+      0.11936
+     ],
+     "Two-wheeler": [
+      0.4582,
+      0.41648
+     ]
+    }
+   }
+  }
+ },
+ "olap": {
+  "by_year": [
+   {
+    "key": [
+     "2019"
+    ],
+    "accidents": 820
+   },
+   {
+    "key": [
+     "2020"
+    ],
+    "accidents": 610
+   },
+   {
+    "key": [
+     "2021"
+    ],
+    "accidents": 741
+   },
+   {
+    "key": [
+     "2022"
+    ],
+    "accidents": 860
+   },
+   {
+    "key": [
+     "2023"
+    ],
+    "accidents": 905
+   }
+  ],
+  "by_time_band": [
+   {
+    "key": [
+     "Evening (16-21)"
+    ],
+    "accidents": 1283
+   },
+   {
+    "key": [
+     "Midday (10-16)"
+    ],
+    "accidents": 1137
+   },
+   {
+    "key": [
+     "Morning (6-10)"
+    ],
+    "accidents": 502
+   },
+   {
+    "key": [
+     "Night (21-6)"
+    ],
+    "accidents": 1014
+   }
+  ],
+  "by_road_type_severity": [
+   {
+    "key": [
+     "Arterial",
+     "Fatal"
+    ],
+    "accidents": 335
+   },
+   {
+    "key": [
+     "Arterial",
+     "Grievous"
+    ],
+    "accidents": 494
+   },
+   {
+    "key": [
+     "Arterial",
+     "Minor"
+    ],
+    "accidents": 354
+   },
+   {
+    "key": [
+     "Collector",
+     "Fatal"
+    ],
+    "accidents": 186
+   },
+   {
+    "key": [
+     "Collector",
+     "Grievous"
+    ],
+    "accidents": 342
+   },
+   {
+    "key": [
+     "Collector",
+     "Minor"
+    ],
+    "accidents": 280
+   },
+   {
+    "key": [
+     "Highway",
+     "Fatal"
+    ],
+    "accidents": 618
+   },
+   {
+    "key": [
+     "Highway",
+     "Grievous"
+    ],
+    "accidents": 368
+   },
+   {
+    "key": [
+     "Highway",
+     "Minor"
+    ],
+    "accidents": 296
+   },
+   {
+    "key": [
+     "Local",
+     "Fatal"
+    ],
+    "accidents": 98
+   },
+   {
+    "key": [
+     "Local",
+     "Grievous"
+    ],
+    "accidents": 301
+   },
+   {
+    "key": [
+     "Local",
+     "Minor"
+    ],
+    "accidents": 264
+   }
+  ],
+  "by_season_weather": [
+   {
+    "key": [
+     "Monsoon",
+     "Clear"
+    ],
+    "accidents": 686
+   },
+   {
+    "key": [
+     "Monsoon",
+     "Cloudy"
+    ],
+    "accidents": 199
+   },
+   {
+    "key": [
+     "Monsoon",
+     "Rain"
+    ],
+    "accidents": 530
+   },
+   {
+    "key": [
+     "Summer",
+     "Clear"
+    ],
+    "accidents": 804
+   },
+   {
+    "key": [
+     "Summer",
+     "Cloudy"
+    ],
+    "accidents": 110
+   },
+   {
+    "key": [
+     "Summer",
+     "Rain"
+    ],
+    "accidents": 16
+   },
+   {
+    "key": [
+     "Winter",
+     "Clear"
+    ],
+    "accidents": 1349
+   },
+   {
+    "key": [
+     "Winter",
+     "Cloudy"
+    ],
+    "accidents": 181
+   },
+   {
+    "key": [
+     "Winter",
+     "Mist/Fog"
+    ],
+    "accidents": 34
+   },
+   {
+    "key": [
+     "Winter",
+     "Rain"
+    ],
+    "accidents": 27
+   }
+  ],
+  "by_vehicle": [
+   {
+    "key": [
+     "Auto-rickshaw"
+    ],
+    "accidents": 234
+   },
+   {
+    "key": [
+     "Bicycle"
+    ],
+    "accidents": 134
+   },
+   {
+    "key": [
+     "Bus"
+    ],
+    "accidents": 202
+   },
+   {
+    "key": [
+     "Car"
+    ],
+    "accidents": 731
+   },
+   {
+    "key": [
+     "Pedestrian"
+    ],
+    "accidents": 418
+   },
+   {
+    "key": [
+     "Truck/Tempo"
+    ],
+    "accidents": 522
+   },
+   {
+    "key": [
+     "Two-wheeler"
+    ],
+    "accidents": 1695
+   }
+  ]
+ }
+}

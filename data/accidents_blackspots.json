@@ -1,0 +1,177 @@
+[
+ {
+  "name": "Navale Bridge",
+  "lat": 18.46002314510724,
+  "lon": 73.82312628351207,
+  "n": 150,
+  "kind": "slope"
+ },
+ {
+  "name": "Navale Bridge Selfie Point",
+  "lat": 18.45386915982301,
+  "lon": 73.82800052473523,
+  "n": 60,
+  "kind": "slope"
+ },
+ {
+  "name": "New Katraj Tunnel Road",
+  "lat": 18.430575210490424,
+  "lon": 73.84056300430817,
+  "n": 70,
+  "kind": "slope"
+ },
+ {
+  "name": "Dari Pul (Narhe)",
+  "lat": 18.444496642175203,
+  "lon": 73.8365946526345,
+  "n": 45,
+  "kind": "bridge"
+ },
+ {
+  "name": "Katraj Chowk",
+  "lat": 18.45517727850739,
+  "lon": 73.85857237993416,
+  "n": 55,
+  "kind": "junction"
+ },
+ {
+  "name": "Mai Mangeshkar Hospital, Warje",
+  "lat": 18.48492830120705,
+  "lon": 73.7994753880319,
+  "n": 35,
+  "kind": "junction"
+ },
+ {
+  "name": "Mutha River Bridge, Warje",
+  "lat": 18.495002703178148,
+  "lon": 73.78793327491795,
+  "n": 40,
+  "kind": "bridge"
+ },
+ {
+  "name": "Dukkar Khind",
+  "lat": 18.50129,
+  "lon": 73.79184,
+  "n": 45,
+  "kind": "slope"
+ },
+ {
+  "name": "Chandani Chowk",
+  "lat": 18.507638959404847,
+  "lon": 73.78669629457976,
+  "n": 40,
+  "kind": "junction"
+ },
+ {
+  "name": "Bhumkar Chowk, Wakad",
+  "lat": 18.60539091787535,
+  "lon": 73.75220902802039,
+  "n": 50,
+  "kind": "junction"
+ },
+ {
+  "name": "Nashik Phata",
+  "lat": 18.609276640006787,
+  "lon": 73.82007033738537,
+  "n": 35,
+  "kind": "junction"
+ },
+ {
+  "name": "Vaiduwadi Chowk, Hadapsar",
+  "lat": 18.504725034405173,
+  "lon": 73.91820351754875,
+  "n": 30,
+  "kind": "junction"
+ },
+ {
+  "name": "Ravidarshan Chowk, Hadapsar",
+  "lat": 18.50085085315739,
+  "lon": 73.9371372026391,
+  "n": 30,
+  "kind": "junction"
+ },
+ {
+  "name": "Saswad Road near IBM, Hadapsar",
+  "lat": 18.49648432539051,
+  "lon": 73.94340446962292,
+  "n": 30,
+  "kind": "midblock"
+ },
+ {
+  "name": "Phursungi Phata",
+  "lat": 18.485997130714985,
+  "lon": 73.95380139409949,
+  "n": 35,
+  "kind": "junction"
+ },
+ {
+  "name": "Palkhi Visava, Wadki",
+  "lat": 18.442842732738114,
+  "lon": 73.97364355925386,
+  "n": 25,
+  "kind": "midblock"
+ },
+ {
+  "name": "Kadamwak Vasti, Loni Kalbhor",
+  "lat": 18.4924798410323,
+  "lon": 73.99891759719924,
+  "n": 35,
+  "kind": "midblock"
+ },
+ {
+  "name": "Loni Station Chowk",
+  "lat": 18.489997709721738,
+  "lon": 74.01508122752065,
+  "n": 30,
+  "kind": "junction"
+ },
+ {
+  "name": "Mundhwa Railway Bridge",
+  "lat": 18.533829082455338,
+  "lon": 73.9294659826405,
+  "n": 25,
+  "kind": "bridge"
+ },
+ {
+  "name": "Kharadi Bypass Chowk",
+  "lat": 18.549694722591827,
+  "lon": 73.93692530524206,
+  "n": 40,
+  "kind": "junction"
+ },
+ {
+  "name": "Kharadi Jakat Naka",
+  "lat": 18.55724,
+  "lon": 73.94441,
+  "n": 25,
+  "kind": "junction"
+ },
+ {
+  "name": "Tata Guard Room, Chandan Nagar",
+  "lat": 18.5612740616606,
+  "lon": 73.93120835092097,
+  "n": 30,
+  "kind": "junction"
+ },
+ {
+  "name": "Reliance Mart, Chandan Nagar",
+  "lat": 18.563439899632282,
+  "lon": 73.93451611911487,
+  "n": 25,
+  "kind": "midblock"
+ },
+ {
+  "name": "Viman Nagar Chowk",
+  "lat": 18.565145072961574,
+  "lon": 73.91302390387068,
+  "n": 30,
+  "kind": "junction"
+ },
+ {
+  "name": "Airport Chowk",
+  "lat": 18.57812,
+  "lon": 73.90811,
+  "n": 25,
+  "kind": "junction"
+ }
+]

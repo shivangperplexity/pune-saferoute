@@ -117,7 +117,8 @@ async def main():
         await settle(mp)
         await mp.screenshot(path=f"{OUT}/17_mobile_route.png")
         await mp.click("#btnNav"); await mp.wait_for_timeout(1500)
-        for la, lo in [(18.53110, 73.84790), (18.53150, 73.84850), (18.53190, 73.84920)]:
+        pts = await mp.evaluate("() => { const r = SR.app.state.route; return [12, 18, 24, 30].map(i => r.pts[Math.min(i, r.pts.length - 1)]); }")
+        for la, lo in pts:
             await m.set_geolocation({"latitude": la, "longitude": lo}); await mp.wait_for_timeout(1300)
         await settle(mp, 1500)
         await mp.screenshot(path=f"{OUT}/18_mobile_gps.png")

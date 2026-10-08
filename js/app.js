@@ -19,8 +19,8 @@
   // ---------------------------------------------------------------- map
   const map = L.map("map", { zoomControl: false, preferCanvas: true, minZoom: 10, maxBounds: [[18.2, 73.4], [18.95, 74.3]] }).setView(PUNE, 12);
   L.control.zoom({ position: "topright" }).addTo(map);
-  const tiles = L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
-    subdomains: "abcd", maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  const tiles = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(map);
   // if the tile server is unreachable, draw our own basemap from the road graph
   let tileErrors = 0, tileOk = 0, fallback = null;

@@ -241,3 +241,5 @@ button, input, select { font: inherit; color: inherit; }
   .insights > header { padding: 10px 14px; }
   .ins-body { padding: 14px 12px 32px; }
 }
+
+body.navigating .toast { bottom: auto; top: 96px; }

@@ -131,8 +131,9 @@
     startGps() {
       if (!("geolocation" in navigator)) { SR.toast("This device has no GPS. Try the bike simulator instead."); return; }
       this.watch = navigator.geolocation.watchPosition((pos) => this.onFix(pos), (err) => {
-        SR.toast(err.code === 1 ? "Location permission denied — allow location access or use the simulator." : "Waiting for GPS signal…");
-      }, { enableHighAccuracy: true, maximumAge: 1000, timeout: 15000 });
+        if (err.code === 1) SR.toast("Location permission denied — allow location access or use the simulator.", 6000);
+        else if (!this.lastFix) SR.toast("Waiting for GPS signal…");
+      }, { enableHighAccuracy: true, maximumAge: 1000, timeout: 30000 });
       this.gpsTimer = setInterval(() => this.update(1), 1000);
     }
     onFix(pos) {

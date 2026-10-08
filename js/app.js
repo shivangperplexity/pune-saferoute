@@ -140,7 +140,7 @@
     for (const h of SR.Risk.hotspots) {
       const c = TIER_COLOR[h.tier];
       L.circle([h.lat, h.lon], { radius: h.radius_m, color: c, weight: 2, fillColor: c, fillOpacity: 0.18, renderer }).bindPopup(hotPopup(h)).addTo(hotLayer);
-      if (h.tier === "High") L.marker([h.lat, h.lon], { interactive: false, icon: L.divIcon({ className: "", html: `<div class="hs-label">⚠ ${h.name.replace(/ \(.*\)/, "").split(",")[0]}</div>`, iconAnchor: [-8, 10] }) }).addTo(hotLayer);
+      if (h.tier === "High") L.marker([h.lat, h.lon], { interactive: false, icon: L.divIcon({ className: "", html: `<div class="hs-label">⚠ ${h.name.replace(/ \(.*\)/, "").split(",")[0]}</div>`, iconSize: null, iconAnchor: [-10, 10] }) }).addTo(hotLayer);
     }
     const SC = { Fatal: "#b3261e", Grievous: "#e8890c", Minor: "#7b8f86" };
     for (const r of state.accidents) {

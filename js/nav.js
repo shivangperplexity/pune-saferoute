@@ -260,7 +260,7 @@
         Voice.beep(lim.zone ? 990 : 880, 140, 2);
         if (now - (this.lastOverSay || 0) > 12000) { this.lastOverSay = now; Voice.say(`Slow down. Speed limit ${lim.limit}`); }
       }
-      if (over && !this.inZone) this.showWarn("over", `Over the limit: ${Math.round(kmh)} in a ${lim.limit} zone`, lim.reduced ? `Limit reduced — ${lim.reasons.join(", ")}` : "Ease off the throttle");
+      if (over && this.inZone === null && this.warnKind !== "ahead") this.showWarn("over", `Over the limit: ${Math.round(kmh)} in a ${lim.limit} zone`, lim.reduced ? `Limit reduced — ${lim.reasons.join(", ")}` : "Ease off the throttle");
       else if (!over && this.warnKind === "over") this.hideWarn();
 
       if (rem < 8 || (this.mode === "sim" && this.s >= r.distance - 0.5)) this.finish(true);
@@ -276,7 +276,7 @@
           Voice.beep(660, 180, 3);
           Voice.say(`Entering accident hotspot, ${lim.zone.name}. Speed limit ${lim.limit}.`);
         }
-        this.showWarn("in", `Accident hotspot: ${lim.zone.name}`, `${lim.zone.accidents} crashes · ${lim.zone.killed} deaths in 5 years · usually ${lim.zone.top_cause.toLowerCase()} · keep under ${lim.limit} km/h`);
+        this.showWarn("in", (kmh > lim.limit + 2 ? "Slow down! " : "") + `Accident hotspot: ${lim.zone.name}`, `${lim.zone.accidents} crashes · ${lim.zone.killed} deaths in 5 years · usually ${lim.zone.top_cause.toLowerCase()} · keep under ${lim.limit} km/h`);
         return;
       }
       if (this.inZone !== null) { this.inZone = null; this.hideWarn(); }

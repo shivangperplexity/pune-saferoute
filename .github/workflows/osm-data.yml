@@ -1,0 +1,34 @@
+name: Build Pune road data from OpenStreetMap
+on:
+  push:
+    paths: ["tools/build_graph.py", "tools/osm-refresh.txt", ".github/workflows/osm-data.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download roads and places (Overpass API)
+        run: |
+          UA="SafeRoutePune/1.0 (college project; github.com/shivangperplexity/pune-saferoute)"
+          Q='[out:json][timeout:240];(way["highway"~"^(motorway|motorway_link|trunk|trunk_link|primary|primary_link|secondary|secondary_link|tertiary|tertiary_link|unclassified|residential|living_street)$"](18.42,73.72,18.70,74.02););out body;>;out skel qt;'
+          P='[out:json][timeout:120];(node["place"~"^(suburb|neighbourhood|quarter|locality|village|town)$"]["name"](18.42,73.72,18.70,74.02);nwr["amenity"~"^(college|university|hospital|bus_station|school|cinema|marketplace|place_of_worship)$"]["name"](18.42,73.72,18.70,74.02);nwr["railway"="station"]["name"](18.42,73.72,18.70,74.02);nwr["shop"="mall"]["name"](18.42,73.72,18.70,74.02);nwr["tourism"~"^(attraction|museum|hotel|viewpoint)$"]["name"](18.42,73.72,18.70,74.02);nwr["aeroway"="aerodrome"]["name"](18.42,73.72,18.70,74.02);nwr["leisure"~"^(park|stadium)$"]["name"](18.42,73.72,18.70,74.02);nwr["office"="it"]["name"](18.42,73.72,18.70,74.02);nwr["landuse"="commercial"]["name"](18.42,73.72,18.70,74.02););out center tags;'
+          for i in 1 2 3; do
+            curl -sS -m 400 -A "$UA" -X POST --data-urlencode "data=$Q" https://overpass-api.de/api/interpreter -o /tmp/roads.json && python3 -c "import json;json.load(open('/tmp/roads.json'))" && break
+            sleep 30
+          done
+          for i in 1 2 3; do
+            curl -sS -m 300 -A "$UA" -X POST --data-urlencode "data=$P" https://overpass-api.de/api/interpreter -o /tmp/places.json && python3 -c "import json;json.load(open('/tmp/places.json'))" && break
+            sleep 30
+          done
+      - name: Build graph
+        run: python3 tools/build_graph.py /tmp/roads.json /tmp/places.json data
+      - name: Commit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/graph.json data/places.json
+          git commit -m "Update Pune road graph from OpenStreetMap" || echo "no changes"
+          git push
